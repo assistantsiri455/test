@@ -24,6 +24,11 @@ output: image genrate
 3) sudo Docker run -d -p 8080:80 (project_name)
 
 open Brower:- 0.0.0.0:8080 ----> disply index.htmlsudo apt update
+2)
+FROM nginx:alpine
+WORKDIR /user/share/nginx/html
+COPY . .
+EXPOSE 80
 
 sudo apt install maven
 mvn -version
