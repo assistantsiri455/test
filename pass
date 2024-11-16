@@ -1,0 +1,26 @@
+pallaviborade272000@gmail.com
+bitbucket-Anushree@1827
+github - Anushree@2718
+
+ME=BITBUCKE=piyu@12345
+GIT=Priyanka@509
+sudo apt install docker.io
+sudo apt get update
+sudo systemctl status docker 
+
+
+
+
+create one folder (demo) 
+(create two files in demo 1.html 2 Dockerfile)
+terminal --> touch index.html (open in text editor write a code)
+             touch Dockerfile  --> FROM enginx
+                               -->COPY index.html\user\share\enginx\html
+                                  COPY . . 
+                                  EXPOSE 80 
+
+terminal -->sudo Docker build -t(project name)
+sudo Docker images
+sudo Docker run -d -p 8080:80(project_name)
+
+open browser --> 0.0.0.0:8080
