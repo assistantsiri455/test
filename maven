@@ -1,4 +1,30 @@
-sudo apt update
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hii piyu</h1>
+</body>
+</html>
+
+create two files 1) index.html 2) Dockerfile
+
+FROM enginx 
+COPY  index.html\usr\share\enginx\html\
+
+comand :- sudo Docker build -t (project_name) .
+
+output: image genrate
+
+2) sudo Docker images 
+
+3) sudo Docker run -d -p 8080:80 (project_name)
+
+open Brower:- 0.0.0.0:8080 ----> disply index.htmlsudo apt update
+
 sudo apt install maven
 mvn -version
 Step 1 mvn archetype:generate -DgroupId=com.example.demo -DartifactId=DemoProject
